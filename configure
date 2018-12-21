@@ -665,6 +665,10 @@ SNDFILE_LIBS
 SNDFILE_CFLAGS
 HAVE_LIBSNDFILE_FALSE
 HAVE_LIBSNDFILE_TRUE
+LZO2_LIBS
+LZO2_CFLAGS
+HAVE_EXTERNAL_LZO2_FALSE
+HAVE_EXTERNAL_LZO2_TRUE
 TRIO_LIBS
 HAVE_EXTERNAL_TRIO_FALSE
 HAVE_EXTERNAL_TRIO_TRUE
@@ -952,6 +956,7 @@ enable_jack
 with_external_mpcdec
 with_external_tremor
 with_external_trio
+with_external_lzo
 with_libsndfile
 with_sdl_prefix
 with_sdl_exec_prefix
@@ -978,6 +983,8 @@ PKG_CONFIG_PATH
 PKG_CONFIG_LIBDIR
 JACK_CFLAGS
 JACK_LIBS
+LZO2_CFLAGS
+LZO2_LIBS
 SNDFILE_CFLAGS
 SNDFILE_LIBS
 SDL2_FRAMEWORK
@@ -1663,6 +1670,7 @@ Optional Packages:
   --with-external-mpcdec  compile and link with external mpcdec [default=no]
   --with-external-tremor  compile and link with external tremor [default=no]
   --with-external-trio    compile and link with external trio [default=no]
+  --with-external-lzo     compile and link with external LZO [default=no]
   --with-libsndfile       support various sound file formats in ripped CD
                           images [default=yes]
   --with-sdl-prefix=PFX   Prefix where SDL is installed (optional)
@@ -1689,6 +1697,8 @@ Some influential environment variables:
               path overriding pkg-config's built-in search path
   JACK_CFLAGS C compiler flags for JACK, overriding pkg-config
   JACK_LIBS   linker flags for JACK, overriding pkg-config
+  LZO2_CFLAGS C compiler flags for LZO2, overriding pkg-config
+  LZO2_LIBS   linker flags for LZO2, overriding pkg-config
   SNDFILE_CFLAGS
               C compiler flags for SNDFILE, overriding pkg-config
   SNDFILE_LIBS
@@ -4345,8 +4355,8 @@ $as_echo "$ac_cv_safe_to_define___extensions__" >&6; }
 #
 # Avoid trailing and leading zeroes in the decimal version components to avoid confusing not-so-learned people.
 #
-MEDNAFEN_VERSION='1.21.0-UNSTABLE'
-MEDNAFEN_VERSION_NUMERIC=0x00102100
+MEDNAFEN_VERSION='1.21.1'
+MEDNAFEN_VERSION_NUMERIC=0x00102101
 #                        0xJJJnnnRR
 
 # Make sure we can run config.sub.
@@ -17247,6 +17257,117 @@ ac_config_links="$ac_config_links include/trio/triostr.h:$trio_include_symsrc/tr
 
 
 #
+# minilzo/lzo
+#
+ if false; then
+  HAVE_EXTERNAL_LZO2_TRUE=
+  HAVE_EXTERNAL_LZO2_FALSE='#'
+else
+  HAVE_EXTERNAL_LZO2_TRUE='#'
+  HAVE_EXTERNAL_LZO2_FALSE=
+fi
+
+
+# Check whether --with-external-lzo was given.
+if test "${with_external_lzo+set}" = set; then :
+  withval=$with_external_lzo;
+else
+  with_external_lzo=no
+fi
+
+if test x$with_external_lzo = xyes; then
+
+pkg_failed=no
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for LZO2" >&5
+$as_echo_n "checking for LZO2... " >&6; }
+
+if test -n "$LZO2_CFLAGS"; then
+    pkg_cv_LZO2_CFLAGS="$LZO2_CFLAGS"
+ elif test -n "$PKG_CONFIG"; then
+    if test -n "$PKG_CONFIG" && \
+    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"lzo2 >= 2.0.9\""; } >&5
+  ($PKG_CONFIG --exists --print-errors "lzo2 >= 2.0.9") 2>&5
+  ac_status=$?
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  test $ac_status = 0; }; then
+  pkg_cv_LZO2_CFLAGS=`$PKG_CONFIG --cflags "lzo2 >= 2.0.9" 2>/dev/null`
+		      test "x$?" != "x0" && pkg_failed=yes
+else
+  pkg_failed=yes
+fi
+ else
+    pkg_failed=untried
+fi
+if test -n "$LZO2_LIBS"; then
+    pkg_cv_LZO2_LIBS="$LZO2_LIBS"
+ elif test -n "$PKG_CONFIG"; then
+    if test -n "$PKG_CONFIG" && \
+    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"lzo2 >= 2.0.9\""; } >&5
+  ($PKG_CONFIG --exists --print-errors "lzo2 >= 2.0.9") 2>&5
+  ac_status=$?
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  test $ac_status = 0; }; then
+  pkg_cv_LZO2_LIBS=`$PKG_CONFIG --libs "lzo2 >= 2.0.9" 2>/dev/null`
+		      test "x$?" != "x0" && pkg_failed=yes
+else
+  pkg_failed=yes
+fi
+ else
+    pkg_failed=untried
+fi
+
+
+
+if test $pkg_failed = yes; then
+   	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
+
+if $PKG_CONFIG --atleast-pkgconfig-version 0.20; then
+        _pkg_short_errors_supported=yes
+else
+        _pkg_short_errors_supported=no
+fi
+        if test $_pkg_short_errors_supported = yes; then
+	        LZO2_PKG_ERRORS=`$PKG_CONFIG --short-errors --print-errors --cflags --libs "lzo2 >= 2.0.9" 2>&1`
+        else
+	        LZO2_PKG_ERRORS=`$PKG_CONFIG --print-errors --cflags --libs "lzo2 >= 2.0.9" 2>&1`
+        fi
+	# Put the nasty error message in config.log where it belongs
+	echo "$LZO2_PKG_ERRORS" >&5
+
+	as_fn_error $? "*** lzo2 >= 2.0.9 not found!" "$LINENO" 5
+elif test $pkg_failed = untried; then
+     	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
+	as_fn_error $? "*** lzo2 >= 2.0.9 not found!" "$LINENO" 5
+else
+	LZO2_CFLAGS=$pkg_cv_LZO2_CFLAGS
+	LZO2_LIBS=$pkg_cv_LZO2_LIBS
+        { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
+$as_echo "yes" >&6; }
+
+fi
+
+
+
+$as_echo "#define HAVE_EXTERNAL_LZO2 1" >>confdefs.h
+
+	 if true; then
+  HAVE_EXTERNAL_LZO2_TRUE=
+  HAVE_EXTERNAL_LZO2_FALSE='#'
+else
+  HAVE_EXTERNAL_LZO2_TRUE='#'
+  HAVE_EXTERNAL_LZO2_FALSE=
+fi
+
+	minilzo_include_symsrc="include/minilzo_external"
+else
+	minilzo_include_symsrc="include/minilzo_internal"
+fi
+ac_config_links="$ac_config_links include/minilzo/minilzo.h:$minilzo_include_symsrc/minilzo.h"
+
+
+#
 # libsndfile
 #
  if false; then
@@ -19495,6 +19616,14 @@ if test -z "${HAVE_EXTERNAL_TRIO_TRUE}" && test -z "${HAVE_EXTERNAL_TRIO_FALSE}"
   as_fn_error $? "conditional \"HAVE_EXTERNAL_TRIO\" was never defined.
 Usually this means the macro was only invoked conditionally." "$LINENO" 5
 fi
+if test -z "${HAVE_EXTERNAL_LZO2_TRUE}" && test -z "${HAVE_EXTERNAL_LZO2_FALSE}"; then
+  as_fn_error $? "conditional \"HAVE_EXTERNAL_LZO2\" was never defined.
+Usually this means the macro was only invoked conditionally." "$LINENO" 5
+fi
+if test -z "${HAVE_EXTERNAL_LZO2_TRUE}" && test -z "${HAVE_EXTERNAL_LZO2_FALSE}"; then
+  as_fn_error $? "conditional \"HAVE_EXTERNAL_LZO2\" was never defined.
+Usually this means the macro was only invoked conditionally." "$LINENO" 5
+fi
 if test -z "${HAVE_LIBSNDFILE_TRUE}" && test -z "${HAVE_LIBSNDFILE_FALSE}"; then
   as_fn_error $? "conditional \"HAVE_LIBSNDFILE\" was never defined.
 Usually this means the macro was only invoked conditionally." "$LINENO" 5
@@ -20227,6 +20356,7 @@ do
     "include/trio/trionan.h") CONFIG_LINKS="$CONFIG_LINKS include/trio/trionan.h:$trio_include_symsrc/trionan.h" ;;
     "include/trio/triop.h") CONFIG_LINKS="$CONFIG_LINKS include/trio/triop.h:$trio_include_symsrc/triop.h" ;;
     "include/trio/triostr.h") CONFIG_LINKS="$CONFIG_LINKS include/trio/triostr.h:$trio_include_symsrc/triostr.h" ;;
+    "include/minilzo/minilzo.h") CONFIG_LINKS="$CONFIG_LINKS include/minilzo/minilzo.h:$minilzo_include_symsrc/minilzo.h" ;;
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "po/Makefile.in") CONFIG_FILES="$CONFIG_FILES po/Makefile.in" ;;
     "intl/Makefile") CONFIG_FILES="$CONFIG_FILES intl/Makefile" ;;

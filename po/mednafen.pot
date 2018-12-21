@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: mednafen 1.21.0-UNSTABLE\n"
+"Project-Id-Version: mednafen 1.21.1\n"
 "Report-Msgid-Bugs-To: http://forum.fobby.net/\n"
-"POT-Creation-Date: 2018-02-13 15:25-0800\n"
+"POT-Creation-Date: 2018-03-08 22:50-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -363,27 +363,27 @@ msgstr ""
 msgid "Error getting the size of opened file \"%s\": %s"
 msgstr ""
 
-#: src/FileStream.cpp:408
+#: src/FileStream.cpp:410
 #, c-format
 msgid "Error locking opened file \"%s\": 0x%08x"
 msgstr ""
 
-#: src/FileStream.cpp:415
+#: src/FileStream.cpp:417
 #, c-format
 msgid "Error locking opened file \"%s\": %s"
 msgstr ""
 
-#: src/FileStream.cpp:430
+#: src/FileStream.cpp:432
 #, c-format
 msgid "Error unlocking opened file \"%s\": 0x%08x"
 msgstr ""
 
-#: src/FileStream.cpp:437
+#: src/FileStream.cpp:439
 #, c-format
 msgid "Error unlocking opened file \"%s\": %s"
 msgstr ""
 
-#: src/FileStream.cpp:482
+#: src/FileStream.cpp:484
 #, c-format
 msgid "Error closing opened file \"%s\": %s"
 msgstr ""
@@ -601,19 +601,19 @@ msgstr ""
 msgid "OpenGL Error 0x%04x during \"%s\"."
 msgstr ""
 
-#: src/drivers/main.cpp:78
+#: src/drivers/main.cpp:81
 msgid "Selects the default sound driver."
 msgstr ""
 
-#: src/drivers/main.cpp:80
+#: src/drivers/main.cpp:83
 msgid "The default for Linux(if available)."
 msgstr ""
 
-#: src/drivers/main.cpp:81
+#: src/drivers/main.cpp:84
 msgid "The default for OpenBSD."
 msgstr ""
 
-#: src/drivers/main.cpp:82
+#: src/drivers/main.cpp:85
 msgid ""
 "The default for non-Linux UN*X/POSIX/BSD(other than OpenBSD) systems, or "
 "anywhere ALSA is unavailable. If the ALSA driver gives you problems, you can "
@@ -631,24 +631,24 @@ msgid ""
 "flaw/limitation/choice in the OSS API and OSS implementation."
 msgstr ""
 
-#: src/drivers/main.cpp:84
+#: src/drivers/main.cpp:87
 msgid ""
 "The default when it's available(running on Microsoft Windows Vista and "
 "newer)."
 msgstr ""
 
-#: src/drivers/main.cpp:86
+#: src/drivers/main.cpp:89
 msgid "The default for Microsoft Windows XP and older."
 msgstr ""
 
-#: src/drivers/main.cpp:88
+#: src/drivers/main.cpp:91
 msgid ""
 "Experimental exclusive-mode WASAPI driver, usable on Windows Vista and "
 "newer.  Use it for lower-latency sound.  May not work properly on all sound "
 "cards."
 msgstr ""
 
-#: src/drivers/main.cpp:90
+#: src/drivers/main.cpp:93
 msgid ""
 "This driver is not recommended, but it serves as a backup driver if the "
 "others aren't available. Its performance is generally sub-par, requiring "
@@ -656,7 +656,7 @@ msgid ""
 "OS provides a sound callback API itself, such as with Mac OS X and BeOS."
 msgstr ""
 
-#: src/drivers/main.cpp:92
+#: src/drivers/main.cpp:95
 msgid ""
 "The latency reported during startup is for the local sound buffer only and "
 "does not include server-side latency.  Please note that video card "
@@ -664,106 +664,106 @@ msgid ""
 "with jackd's ability to effectively run with realtime response."
 msgstr ""
 
-#: src/drivers/main.cpp:101
+#: src/drivers/main.cpp:104
 msgid "5x7"
 msgstr ""
 
-#: src/drivers/main.cpp:102
+#: src/drivers/main.cpp:105
 msgid "6x9"
 msgstr ""
 
-#: src/drivers/main.cpp:103
+#: src/drivers/main.cpp:106
 msgid "6x12"
 msgstr ""
 
-#: src/drivers/main.cpp:105
+#: src/drivers/main.cpp:108
 msgid "6x13.  CJK support."
 msgstr ""
 
-#: src/drivers/main.cpp:106
+#: src/drivers/main.cpp:109
 msgid "9x18;  CJK support."
 msgstr ""
 
-#: src/drivers/main.cpp:108
+#: src/drivers/main.cpp:111
 msgid "6x13."
 msgstr ""
 
-#: src/drivers/main.cpp:109
+#: src/drivers/main.cpp:112
 msgid "9x18."
 msgstr ""
 
-#: src/drivers/main.cpp:127
+#: src/drivers/main.cpp:137
 msgid ""
 "Update physical joystick(s) internal state in Mednafen even when Mednafen "
 "lacks OS focus."
 msgstr ""
 
-#: src/drivers/main.cpp:128
+#: src/drivers/main.cpp:138
 msgid "Analog axis binary press detection threshold."
 msgstr ""
 
-#: src/drivers/main.cpp:128
+#: src/drivers/main.cpp:138
 msgid ""
 "Threshold for detecting a digital-like \"button\" press on analog axis, in "
 "percent."
 msgstr ""
 
-#: src/drivers/main.cpp:129
+#: src/drivers/main.cpp:139
 msgid "Auto-fire frequency."
 msgstr ""
 
-#: src/drivers/main.cpp:129
+#: src/drivers/main.cpp:139
 msgid "Auto-fire frequency = GameSystemFrameRateHz / (value + 1)"
 msgstr ""
 
-#: src/drivers/main.cpp:130
+#: src/drivers/main.cpp:140
 msgid "Dangerous key action delay."
 msgstr ""
 
-#: src/drivers/main.cpp:130
+#: src/drivers/main.cpp:140
 msgid ""
 "The length of time, in milliseconds, that a button/key corresponding to a "
 "\"dangerous\" command like power, reset, exit, etc. must be pressed before "
 "the command is executed."
 msgstr ""
 
-#: src/drivers/main.cpp:132
+#: src/drivers/main.cpp:142
 msgid "Server hostname."
 msgstr ""
 
-#: src/drivers/main.cpp:133
+#: src/drivers/main.cpp:143
 msgid "Server port."
 msgstr ""
 
-#: src/drivers/main.cpp:134
+#: src/drivers/main.cpp:144
 msgid "Font for netplay chat console."
 msgstr ""
 
-#: src/drivers/main.cpp:135
+#: src/drivers/main.cpp:145
 msgid "Netplay chat console text scale factor."
 msgstr ""
 
-#: src/drivers/main.cpp:135 src/drivers/main.cpp:170
+#: src/drivers/main.cpp:145 src/drivers/main.cpp:182
 msgid "A value of 0 enables auto-scaling."
 msgstr ""
 
-#: src/drivers/main.cpp:136
+#: src/drivers/main.cpp:146
 msgid "Height of chat console, in lines."
 msgstr ""
 
-#: src/drivers/main.cpp:138
+#: src/drivers/main.cpp:148
 msgid "Enable frameskip during emulation rendering."
 msgstr ""
 
-#: src/drivers/main.cpp:139
+#: src/drivers/main.cpp:149
 msgid "Disable for rendering code performance testing."
 msgstr ""
 
-#: src/drivers/main.cpp:141
+#: src/drivers/main.cpp:151
 msgid "Enable time synchronization(waiting) for frame blitting."
 msgstr ""
 
-#: src/drivers/main.cpp:142
+#: src/drivers/main.cpp:152
 msgid ""
 "Disable to reduce latency, at the cost of potentially increased video "
 "\"juddering\", with the maximum reduction in latency being about 1 video "
@@ -772,80 +772,80 @@ msgid ""
 "expensive to emulate, combined with running on a relatively fast CPU."
 msgstr ""
 
-#: src/drivers/main.cpp:145
+#: src/drivers/main.cpp:155
 msgid "Fast-forwarding speed multiplier."
 msgstr ""
 
-#: src/drivers/main.cpp:146
+#: src/drivers/main.cpp:156
 msgid "Treat the fast-forward button as a toggle."
 msgstr ""
 
-#: src/drivers/main.cpp:147
+#: src/drivers/main.cpp:157
 msgid "Silence sound output when fast-forwarding."
 msgstr ""
 
-#: src/drivers/main.cpp:149
+#: src/drivers/main.cpp:159
 msgid "SLOW-forwarding speed multiplier."
 msgstr ""
 
-#: src/drivers/main.cpp:150
+#: src/drivers/main.cpp:160
 msgid "Treat the SLOW-forward button as a toggle."
 msgstr ""
 
-#: src/drivers/main.cpp:152
+#: src/drivers/main.cpp:162
 msgid "Disable speed throttling when sound is disabled."
 msgstr ""
 
-#: src/drivers/main.cpp:153
+#: src/drivers/main.cpp:163
 msgid "Automatic load/save state on game load/save."
 msgstr ""
 
-#: src/drivers/main.cpp:153
+#: src/drivers/main.cpp:163
 msgid ""
 "Automatically save and load save states when a game is closed or loaded, "
 "respectively."
 msgstr ""
 
-#: src/drivers/main.cpp:154
+#: src/drivers/main.cpp:164
 msgid "Select sound driver."
 msgstr ""
 
-#: src/drivers/main.cpp:154
+#: src/drivers/main.cpp:164
 msgid ""
 "The following choices are possible, sorted by preference, high to low, when "
 "\"default\" driver is used, but dependent on being compiled in."
 msgstr ""
 
-#: src/drivers/main.cpp:155
+#: src/drivers/main.cpp:165
 msgid "Select sound output device."
 msgstr ""
 
-#: src/drivers/main.cpp:155
+#: src/drivers/main.cpp:165
 msgid ""
 "When using ALSA sound output under Linux, the \"sound.device\" setting "
 "\"default\" is Mednafen's default, IE \"hw:0\", not ALSA's \"default\". If "
 "you want to use ALSA's \"default\", use \"sexyal-literal-default\"."
 msgstr ""
 
-#: src/drivers/main.cpp:156
+#: src/drivers/main.cpp:166
 msgid "Sound volume level, in percent."
 msgstr ""
 
-#: src/drivers/main.cpp:156
+#: src/drivers/main.cpp:166
 msgid ""
 "Setting this volume control higher than the default of \"100\" may severely "
 "distort the sound."
 msgstr ""
 
-#: src/drivers/main.cpp:157
+#: src/drivers/main.cpp:167
 msgid "Enable sound output."
 msgstr ""
 
-#: src/drivers/main.cpp:158
+#: src/drivers/main.cpp:168
 msgid "Desired period size in microseconds(μs)."
 msgstr ""
 
-#: src/drivers/main.cpp:158
+#: src/drivers/main.cpp:168
 msgid ""
 "Currently only affects OSS, ALSA, WASAPI(exclusive mode), and SDL output.  A "
 "value of 0 defers to the default in the driver code in SexyAL.\n"
@@ -854,76 +854,100 @@ msgid ""
 "buffer_time\"."
 msgstr ""
 
-#: src/drivers/main.cpp:159
+#: src/drivers/main.cpp:169
 msgid "Desired buffer size in milliseconds(ms)."
 msgstr ""
 
-#: src/drivers/main.cpp:159
+#: src/drivers/main.cpp:169
 msgid "The default value of 0 enables automatic buffer size selection."
 msgstr ""
 
-#: src/drivers/main.cpp:160
+#: src/drivers/main.cpp:170
 msgid "Specifies the sound playback rate, in sound frames per second(\"Hz\")."
 msgstr ""
 
-#: src/drivers/main.cpp:163
+#: src/drivers/main.cpp:173
 msgid "Automatically go into the debugger's step mode after a game is loaded."
 msgstr ""
 
-#: src/drivers/main.cpp:166
+#: src/drivers/main.cpp:176
 msgid ""
 "Length of time, in milliseconds, to display internal status and error "
 "messages"
 msgstr ""
 
-#: src/drivers/main.cpp:166
+#: src/drivers/main.cpp:176
 msgid ""
 "Time lengths less than 100ms are recommended against unless you understand "
 "you may miss important non-fatal error messages, and that the input "
 "configuration process may become unusable."
 msgstr ""
 
-#: src/drivers/main.cpp:167
+#: src/drivers/main.cpp:177
 msgid ""
 "Length of time, in milliseconds, to display the save state or the movie "
 "selector after selecting a state or movie."
 msgstr ""
 
-#: src/drivers/main.cpp:168
+#: src/drivers/main.cpp:178
 msgid "Enable alpha blending for OSD elements."
 msgstr ""
 
-#: src/drivers/main.cpp:170
+#: src/drivers/main.cpp:180
+msgid "Automatically enable FPS display on startup."
+msgstr ""
+
+#: src/drivers/main.cpp:181
+msgid "FPS display position."
+msgstr ""
+
+#: src/drivers/main.cpp:182
 msgid "FPS display scale factor."
 msgstr ""
 
-#: src/drivers/main.cpp:171
+#: src/drivers/main.cpp:183
 msgid "FPS display font."
 msgstr ""
 
-#: src/drivers/main.cpp:174
+#: src/drivers/main.cpp:184
+msgid "FPS display text color."
+msgstr ""
+
+#: src/drivers/main.cpp:184 src/drivers/main.cpp:185
+msgid "0xAARRGGBB"
+msgstr ""
+
+#: src/drivers/main.cpp:185
+msgid "FPS display background color."
+msgstr ""
+
+#: src/drivers/main.cpp:187
 msgid "DO NOT USE UNLESS YOU'RE A SPACE GOAT"
 msgstr ""
 
-#: src/drivers/main.cpp:174
+#: src/drivers/main.cpp:187
 msgid ""
 "Use this setting with caution, as save state rewinding can have widely "
 "variable memory and CPU usage requirements among different games and "
 "different emulated systems."
 msgstr ""
 
-#: src/drivers/main.cpp:213
+#: src/drivers/main.cpp:226
 msgid "Disassembly font size."
 msgstr ""
 
-#: src/drivers/main.cpp:213
+#: src/drivers/main.cpp:226
 msgid ""
 "Note: Setting the font size to larger than the default may cause text "
 "overlap in the debugger."
 msgstr ""
 
-#: src/drivers/main.cpp:216
+#: src/drivers/main.cpp:229
 msgid "Character encoding for the debugger's memory editor."
+msgstr ""
+
+#: src/drivers/main.cpp:427 src/drivers/main.cpp:429
+msgid "Mednafen("
 msgstr ""
 
 #: src/drivers/main.cpp:515
@@ -1042,8 +1066,8 @@ msgstr ""
 #, c-format
 msgid ""
 "For example:\n"
-"\t%s -pce.stretch aspect -pce.pixshader autoipsharper \"Hyper Bonk Soldier."
-"pce\"\n"
+"\t%s -pce.stretch aspect -pce.shader autoipsharper \"Hyper Bonk Soldier.pce"
+"\"\n"
 "\n"
 msgstr ""
 
@@ -1063,119 +1087,156 @@ msgstr ""
 msgid "State rewinding functionality enabled."
 msgstr ""
 
-#: src/drivers/main.cpp:1602
+#: src/drivers/main.cpp:1614
 #, c-format
 msgid "Compiled with gcc %s\n"
 msgstr ""
 
-#: src/drivers/main.cpp:1606 src/drivers/main.cpp:1652
+#: src/drivers/main.cpp:1618 src/drivers/main.cpp:1664
 #, c-format
 msgid "Running with %s\n"
 msgstr ""
 
-#: src/drivers/main.cpp:1615
+#: src/drivers/main.cpp:1627
 #, c-format
 msgid "Compiled with GNU libstdc++ %lu\n"
 msgstr ""
 
-#: src/drivers/main.cpp:1620 src/drivers/video.cpp:1114
+#: src/drivers/main.cpp:1632 src/drivers/video.cpp:1167
 msgid "Yes"
 msgstr ""
 
-#: src/drivers/main.cpp:1622 src/drivers/video.cpp:1114
+#: src/drivers/main.cpp:1634 src/drivers/video.cpp:1167
 msgid "No"
-msgstr ""
-
-#: src/drivers/main.cpp:1624
-#, c-format
-msgid "Using SJLJ Exceptions: %s\n"
 msgstr ""
 
 #: src/drivers/main.cpp:1636
 #, c-format
+msgid "Using SJLJ Exceptions: %s\n"
+msgstr ""
+
+#: src/drivers/main.cpp:1648
+#, c-format
 msgid "Compiled against SDL %u.%u.%u(%s), running with SDL %u.%u.%u(%s)\n"
 msgstr ""
 
-#: src/drivers/main.cpp:1640
+#: src/drivers/main.cpp:1652
 msgid ""
 "Running with a version of SDL older than the version compiled and linked "
 "against!"
 msgstr ""
 
-#: src/drivers/main.cpp:1660
+#: src/drivers/main.cpp:1672
 #, c-format
 msgid "Compiled against zlib %s, running with zlib %s(flags=0x%08lx)\n"
 msgstr ""
 
-#: src/drivers/main.cpp:1667
+#: src/drivers/main.cpp:1679
 #, c-format
 msgid "Compiled against libiconv %u.%u, running with libiconv %u.%u\n"
 msgstr ""
 
-#: src/drivers/main.cpp:1883 src/drivers/main.cpp:1886
+#: src/drivers/main.cpp:1897 src/drivers/main.cpp:1900
 #, c-format
 msgid "Error converting value of setting \"%s\" to UTF-8."
 msgstr ""
 
-#: src/drivers/main.cpp:2008
+#: src/drivers/main.cpp:2060
 #, c-format
 msgid "Starting Mednafen %s\n"
 msgstr ""
 
-#: src/drivers/main.cpp:2011
+#: src/drivers/main.cpp:2063
 msgid "Build information:\n"
 msgstr ""
 
-#: src/drivers/main.cpp:2021
+#: src/drivers/main.cpp:2073
 #, c-format
 msgid "Base directory: %s\n"
 msgstr ""
 
-#: src/drivers/main.cpp:2035
+#: src/drivers/main.cpp:2087
 #, c-format
 msgid "Could not create mutex: %s\n"
 msgstr ""
 
-#: src/drivers/main.cpp:2066
+#: src/drivers/main.cpp:2107
+msgid "Opening lockfile...\n"
+msgstr ""
+
+#: src/drivers/main.cpp:2122
+msgid ""
+"Error, but proceeding anyway per environment variable \"MEDNAFEN_ALLOWMULTI"
+"\".\n"
+msgstr ""
+
+#: src/drivers/main.cpp:2126
+msgid ""
+"Multiple instances of Mednafen using the same base directory should not run "
+"simultaneously, otherwise settings file changes may be lost, along with "
+"other similar problems.  If you understand the risks, and want to anyway, "
+"run Mednafen with environment variable \"MEDNAFEN_ALLOWMULTI\" set to \"1\" "
+"to bypass this check."
+msgstr ""
+
+#: src/drivers/main.cpp:2132 src/drivers/main.cpp:2139 src/mednafen.cpp:726
+#: src/mednafen.cpp:735 src/cdrom/CDAccess_Image.cpp:362
+#, c-format
+msgid "Error: %s\n"
+msgstr ""
+
+#: src/drivers/main.cpp:2160
 #, c-format
 msgid "Error creating directories: %s\n"
 msgstr ""
 
-#: src/drivers/video.cpp:139
-msgid "This output method is preferred, as all features are available with it."
+#: src/drivers/video.cpp:135
+msgid "Default"
 msgstr ""
 
-#: src/drivers/video.cpp:140
+#: src/drivers/video.cpp:135
+msgid ""
+"Selects the default video driver.  Currently, this is OpenGL for all "
+"platforms, but may change in the future if better platform-specific drivers "
+"are added."
+msgstr ""
+
+#: src/drivers/video.cpp:137
+msgid ""
+"All video-related Mednafen features are available with this video driver."
+msgstr ""
+
+#: src/drivers/video.cpp:138
 msgid ""
 "Slower with lower-quality scaling than OpenGL, but if you don't have "
-"hardware-accelerated OpenGL rendering, it will be faster than software "
-"OpenGL rendering. Bilinear interpolation not available. OpenGL shaders do "
-"not work with this output method, of course."
+"hardware-accelerated OpenGL rendering, it will probably be faster than "
+"software OpenGL rendering. Bilinear interpolation not available. OpenGL "
+"shaders do not work with this output method, of course."
 msgstr ""
 
-#: src/drivers/video.cpp:147
-msgid "Video output method/driver."
+#: src/drivers/video.cpp:151
+msgid "Video output driver."
 msgstr ""
 
-#: src/drivers/video.cpp:149
+#: src/drivers/video.cpp:153
 msgid "Enable fullscreen mode."
 msgstr ""
 
-#: src/drivers/video.cpp:150
+#: src/drivers/video.cpp:154
 msgid "Display to use with fullscreen mode."
 msgstr ""
 
-#: src/drivers/video.cpp:150
+#: src/drivers/video.cpp:154
 msgid ""
 "Specify -1 to use the display on which the center of the window lies in "
 "windowed mode."
 msgstr ""
 
-#: src/drivers/video.cpp:155
+#: src/drivers/video.cpp:159
 msgid "Attempt to synchronize OpenGL page flips to vertical retrace period."
 msgstr ""
 
-#: src/drivers/video.cpp:156
+#: src/drivers/video.cpp:160
 msgid ""
 "Note: Additionally, if the environment variable \"__GL_SYNC_TO_VBLANK\" does "
 "not exist, then it will be created and set to the value specified for this "
@@ -1183,211 +1244,211 @@ msgid ""
 "synchronization when running under Linux with NVidia's drivers."
 msgstr ""
 
-#: src/drivers/video.cpp:159
+#: src/drivers/video.cpp:163
 msgid "Attempt to disable desktop composition."
 msgstr ""
 
-#: src/drivers/video.cpp:159
+#: src/drivers/video.cpp:163
 msgid ""
 "Currently, this setting only has an effect on Windows Vista and Windows "
 "7(and probably the equivalent server versions as well)."
 msgstr ""
 
-#: src/drivers/video.cpp:164 src/drivers/video.cpp:182 src/ss/ss.cpp:1322
+#: src/drivers/video.cpp:168 src/drivers/video.cpp:186 src/ss/ss.cpp:1322
 #: src/ss/ss.cpp:1323 src/ss/ss.cpp:1324 src/ss/ss.cpp:1339
 #: src/nes/nes.cpp:457 src/vb/vb.cpp:909 src/pce_fast/huc.cpp:309
 #: src/psx/psx.cpp:1622 src/pce/pce.cpp:673
 msgid "Disabled"
 msgstr ""
 
-#: src/drivers/video.cpp:169 src/ss/ss.cpp:1157
+#: src/drivers/video.cpp:173 src/ss/ss.cpp:1157
 msgid "Full"
 msgstr ""
 
-#: src/drivers/video.cpp:169
+#: src/drivers/video.cpp:173
 msgid "Full-screen stretch, disregarding aspect ratio."
 msgstr ""
 
-#: src/drivers/video.cpp:172
+#: src/drivers/video.cpp:176
 msgid "Aspect Preserve"
 msgstr ""
 
-#: src/drivers/video.cpp:172
+#: src/drivers/video.cpp:176
 msgid ""
 "Full-screen stretch as far as the aspect ratio(in this sense, the equivalent "
 "xscalefs == yscalefs) can be maintained."
 msgstr ""
 
-#: src/drivers/video.cpp:174
+#: src/drivers/video.cpp:178
 msgid "Aspect Preserve + Integer Scale"
 msgstr ""
 
-#: src/drivers/video.cpp:174
+#: src/drivers/video.cpp:178
 msgid ""
 "Full-screen stretch, same as \"aspect\" except that the equivalent xscalefs "
 "and yscalefs are rounded down to the nearest integer."
 msgstr ""
 
-#: src/drivers/video.cpp:175
+#: src/drivers/video.cpp:179
 msgid "Aspect Preserve + Integer Multiple-of-2 Scale"
 msgstr ""
 
-#: src/drivers/video.cpp:175
+#: src/drivers/video.cpp:179
 msgid ""
 "Full-screen stretch, same as \"aspect_int\", but rounds down to the nearest "
 "multiple of 2."
 msgstr ""
 
-#: src/drivers/video.cpp:184
+#: src/drivers/video.cpp:188
 msgid "Bilinear"
 msgstr ""
 
-#: src/drivers/video.cpp:187
+#: src/drivers/video.cpp:191
 msgid "Linear (X)"
 msgstr ""
 
-#: src/drivers/video.cpp:187
+#: src/drivers/video.cpp:191
 msgid "Interpolation only on the X axis."
 msgstr ""
 
-#: src/drivers/video.cpp:188
+#: src/drivers/video.cpp:192
 msgid "Linear (Y)"
 msgstr ""
 
-#: src/drivers/video.cpp:188
+#: src/drivers/video.cpp:192
 msgid "Interpolation only on the Y axis."
 msgstr ""
 
-#: src/drivers/video.cpp:223
+#: src/drivers/video.cpp:227
 msgid "None/Disabled"
 msgstr ""
 
-#: src/drivers/video.cpp:224
+#: src/drivers/video.cpp:228
 msgid "Auto Interpolation"
 msgstr ""
 
-#: src/drivers/video.cpp:224
+#: src/drivers/video.cpp:228
 msgid ""
 "Will automatically interpolate on each axis if the corresponding effective "
 "scaling factor is not an integer."
 msgstr ""
 
-#: src/drivers/video.cpp:225
+#: src/drivers/video.cpp:229
 msgid "Sharper Auto Interpolation"
 msgstr ""
 
-#: src/drivers/video.cpp:225
+#: src/drivers/video.cpp:229
 msgid ""
 "Same as \"autoip\", but when interpolation is done, it is done in a manner "
 "that will reduce blurriness if possible."
 msgstr ""
 
-#: src/drivers/video.cpp:227
+#: src/drivers/video.cpp:231
 msgid "GPU-intensive."
 msgstr ""
 
-#: src/drivers/video.cpp:228
+#: src/drivers/video.cpp:232
 msgid "Sharper bilinear interpolation."
 msgstr ""
 
-#: src/drivers/video.cpp:229
+#: src/drivers/video.cpp:233
 msgid "Linear interpolation on X axis only."
 msgstr ""
 
-#: src/drivers/video.cpp:230
+#: src/drivers/video.cpp:234
 msgid "Linear interpolation on Y axis only."
 msgstr ""
 
-#: src/drivers/video.cpp:231
+#: src/drivers/video.cpp:235
 msgid "Sharper version of \"ipxnoty\"."
 msgstr ""
 
-#: src/drivers/video.cpp:232
+#: src/drivers/video.cpp:236
 msgid "Sharper version of \"ipynotx\"."
 msgstr ""
 
-#: src/drivers/video.cpp:234
+#: src/drivers/video.cpp:238
 msgid "Simple approximation of a color TV CRT look."
 msgstr ""
 
-#: src/drivers/video.cpp:234
+#: src/drivers/video.cpp:238
 msgid ""
 "Intended for fullscreen modes with a vertical resolution of around 1000 to "
 "1500 pixels.  Doesn't simulate halation and electron beam energy "
 "distribution nuances."
 msgstr ""
 
-#: src/drivers/video.cpp:241
+#: src/drivers/video.cpp:245
 msgid "Goatron"
 msgstr ""
 
-#: src/drivers/video.cpp:241
+#: src/drivers/video.cpp:245
 msgid "Brightest."
 msgstr ""
 
-#: src/drivers/video.cpp:246
+#: src/drivers/video.cpp:250
 msgid "Borg"
 msgstr ""
 
-#: src/drivers/video.cpp:246
+#: src/drivers/video.cpp:250
 msgid "Darkest."
 msgstr ""
 
-#: src/drivers/video.cpp:247
+#: src/drivers/video.cpp:251
 msgid "Slenderman"
 msgstr ""
 
-#: src/drivers/video.cpp:247
+#: src/drivers/video.cpp:251
 msgid "Spookiest?"
 msgstr ""
 
-#: src/drivers/video.cpp:254
+#: src/drivers/video.cpp:258
 msgid "Full-screen horizontal resolution."
 msgstr ""
 
-#: src/drivers/video.cpp:255
+#: src/drivers/video.cpp:259
 msgid "Full-screen vertical resolution."
 msgstr ""
 
-#: src/drivers/video.cpp:256
+#: src/drivers/video.cpp:260
 msgid ""
 "A value of \"0\" will cause the current desktop horizontal resolution to be "
 "used."
 msgstr ""
 
-#: src/drivers/video.cpp:257
+#: src/drivers/video.cpp:261
 msgid ""
 "A value of \"0\" will cause the current desktop vertical resolution to be "
 "used."
 msgstr ""
 
-#: src/drivers/video.cpp:259
+#: src/drivers/video.cpp:263
 msgid "Scaling factor for the X axis in windowed mode."
 msgstr ""
 
-#: src/drivers/video.cpp:260
+#: src/drivers/video.cpp:264
 msgid "Scaling factor for the Y axis in windowed mode."
 msgstr ""
 
-#: src/drivers/video.cpp:262
+#: src/drivers/video.cpp:266
 msgid "Scaling factor for the X axis in fullscreen mode."
 msgstr ""
 
-#: src/drivers/video.cpp:263
+#: src/drivers/video.cpp:267
 msgid "Scaling factor for the Y axis in fullscreen mode."
 msgstr ""
 
-#: src/drivers/video.cpp:264
+#: src/drivers/video.cpp:268
 msgid ""
 "For this settings to have any effect, the \"<system>.stretch\" setting must "
 "be set to \"0\"."
 msgstr ""
 
-#: src/drivers/video.cpp:266
+#: src/drivers/video.cpp:270
 msgid "Enable scanlines with specified opacity."
 msgstr ""
 
-#: src/drivers/video.cpp:267
+#: src/drivers/video.cpp:271
 msgid ""
 "Opacity is specified in %; IE a value of \"100\" will give entirely black "
 "scanlines.\n"
@@ -1398,19 +1459,19 @@ msgid ""
 "field's lines."
 msgstr ""
 
-#: src/drivers/video.cpp:269
+#: src/drivers/video.cpp:273
 msgid "Stretch to fill screen."
 msgstr ""
 
-#: src/drivers/video.cpp:270
+#: src/drivers/video.cpp:274
 msgid "Enable (bi)linear interpolation."
 msgstr ""
 
-#: src/drivers/video.cpp:272
+#: src/drivers/video.cpp:276
 msgid "Enable specified special video scaler."
 msgstr ""
 
-#: src/drivers/video.cpp:273
+#: src/drivers/video.cpp:277
 msgid ""
 "The destination rectangle is NOT altered by this setting, so if you have "
 "xscale and yscale set to \"2\", and try to use a 3x scaling filter like "
@@ -1420,11 +1481,11 @@ msgid ""
 "fullscreen stretching at this resolution looks quite nice)."
 msgstr ""
 
-#: src/drivers/video.cpp:275
+#: src/drivers/video.cpp:279
 msgid "Enable specified OpenGL shader."
 msgstr ""
 
-#: src/drivers/video.cpp:276
+#: src/drivers/video.cpp:280
 msgid ""
 "Obviously, this will only work with the OpenGL \"video.driver\" setting, and "
 "only on cards and OpenGL implementations that support shaders, otherwise you "
@@ -1433,27 +1494,27 @@ msgid ""
 "ignored."
 msgstr ""
 
-#: src/drivers/video.cpp:348
+#: src/drivers/video.cpp:352
 msgid "Constant RGB horizontal divergence."
 msgstr ""
 
-#: src/drivers/video.cpp:351
+#: src/drivers/video.cpp:355
 msgid "Constant RGB vertical divergence."
 msgstr ""
 
-#: src/drivers/video.cpp:354
+#: src/drivers/video.cpp:358
 msgid "Mask pattern."
 msgstr ""
 
-#: src/drivers/video.cpp:357
+#: src/drivers/video.cpp:361
 msgid "Transparency of otherwise-opaque mask areas."
 msgstr ""
 
-#: src/drivers/video.cpp:360
+#: src/drivers/video.cpp:364
 msgid "Force interlaced video to be treated as progressive."
 msgstr ""
 
-#: src/drivers/video.cpp:360
+#: src/drivers/video.cpp:364
 msgid ""
 "When disabled, the default, the \"video.deinterlacer\" setting is "
 "effectively ignored with respect to what appears on the screen.  When "
@@ -1461,175 +1522,175 @@ msgid ""
 "*.goat.slen setting, or else the scanline effect may look objectionable."
 msgstr ""
 
-#: src/drivers/video.cpp:363
+#: src/drivers/video.cpp:367
 msgid "Enable scanlines effect."
 msgstr ""
 
-#: src/drivers/video.cpp:558
+#: src/drivers/video.cpp:598
 msgid ""
 "WARNING: Resolution is too low for stretch mode selected.  Falling back to "
 "\"aspect\" mode.\n"
 msgstr ""
 
-#: src/drivers/video.cpp:572
+#: src/drivers/video.cpp:612
 msgid ""
 "WARNING: Resolution is too low for stretch mode selected.  Falling back to "
 "\"aspect_int\" mode.\n"
 msgstr ""
 
-#: src/drivers/video.cpp:706
+#: src/drivers/video.cpp:742
 msgid "Initializing video...\n"
 msgstr ""
 
-#: src/drivers/video.cpp:821
+#: src/drivers/video.cpp:860
 #, c-format
 msgid "Window size(%dx%d) is too large!"
 msgstr ""
 
-#: src/drivers/video.cpp:858
+#: src/drivers/video.cpp:897
 msgid "Reverting to soft SDL driver because window is not OpenGL-capable."
 msgstr ""
 
-#: src/drivers/video.cpp:872
+#: src/drivers/video.cpp:911
 #, c-format
 msgid ""
 "Reverting to soft SDL driver because of error creating OpenGL context: %s"
 msgstr ""
 
-#: src/drivers/video.cpp:921
+#: src/drivers/video.cpp:960
 #, c-format
 msgid ""
 "Reverting to windowed mode because SDL_GetWindowDisplayIndex() failed: %s"
 msgstr ""
 
-#: src/drivers/video.cpp:940
+#: src/drivers/video.cpp:979
 #, c-format
 msgid "Reverting to windowed mode because SDL_GetNumVideoDisplays() failed: %s"
 msgstr ""
 
-#: src/drivers/video.cpp:962 src/drivers/video.cpp:1026
+#: src/drivers/video.cpp:1001 src/drivers/video.cpp:1065
 #, c-format
 msgid ""
 "Reverting to windowed mode because SDL_GetCurrentDisplayMode() failed: %s"
 msgstr ""
 
-#: src/drivers/video.cpp:968
+#: src/drivers/video.cpp:1007
 #, c-format
 msgid "Reverting to windowed mode because SDL_DisplayBounds() failed: %s"
 msgstr ""
 
-#: src/drivers/video.cpp:1014
+#: src/drivers/video.cpp:1053
 #, c-format
 msgid "Reverting to windowed mode because SDL_GetDisplayBounds() failed: %s"
 msgstr ""
 
-#: src/drivers/video.cpp:1038
+#: src/drivers/video.cpp:1077
 #, c-format
 msgid "Reverting to windowed mode because no modes big enough for %dx%d."
 msgstr ""
 
-#: src/drivers/video.cpp:1044
+#: src/drivers/video.cpp:1083
 #, c-format
 msgid ""
 "Reverting to windowed mode because SDL_SetWindowDisplayMode() failed: %s"
 msgstr ""
 
-#: src/drivers/video.cpp:1050
+#: src/drivers/video.cpp:1095
 #, c-format
 msgid "Reverting to windowed mode because SDL_SetWindowFullscreen() failed: %s"
 msgstr ""
 
-#: src/drivers/video.cpp:1058
+#: src/drivers/video.cpp:1111
 #, c-format
 msgid ""
 "Reverting to windowed mode because screen destination rectangle(%dx%d) is "
 "too large!"
 msgstr ""
 
-#: src/drivers/video.cpp:1064
+#: src/drivers/video.cpp:1117
 #, c-format
 msgid "Driver: %s\n"
 msgstr ""
 
-#: src/drivers/video.cpp:1064
+#: src/drivers/video.cpp:1117
 msgid "OpenGL"
 msgstr ""
 
-#: src/drivers/video.cpp:1064
+#: src/drivers/video.cpp:1117
 msgid "Software SDL"
 msgstr ""
 
-#: src/drivers/video.cpp:1078
+#: src/drivers/video.cpp:1131
 #, c-format
 msgid "Display Mode: %u x %u x %u bpp @ %dHz  (Window: %u x %u)\n"
 msgstr ""
 
-#: src/drivers/video.cpp:1080
+#: src/drivers/video.cpp:1133
 #, c-format
 msgid "Display Mode: %u x %u x %u bpp  (Window: %u x %u)\n"
 msgstr ""
 
-#: src/drivers/video.cpp:1085 src/drivers/video.cpp:1528
+#: src/drivers/video.cpp:1138 src/drivers/video.cpp:1577
 #, c-format
 msgid "SDL_GetWindowSurface() failed: %s"
 msgstr ""
 
-#: src/drivers/video.cpp:1088
+#: src/drivers/video.cpp:1141
 #, c-format
 msgid "Window surface bit depth(%ubpp) is not supported by Mednafen."
 msgstr ""
 
-#: src/drivers/video.cpp:1111
+#: src/drivers/video.cpp:1164
 #, c-format
 msgid "Shader: %s%s\n"
 msgstr ""
 
-#: src/drivers/video.cpp:1114
+#: src/drivers/video.cpp:1167
 #, c-format
 msgid "Fullscreen: %s\n"
 msgstr ""
 
-#: src/drivers/video.cpp:1115
+#: src/drivers/video.cpp:1168
 #, c-format
 msgid "Special Scaler: %s\n"
 msgstr ""
 
-#: src/drivers/video.cpp:1115 src/ss/ss.cpp:1180 src/ss/ss.cpp:1973
+#: src/drivers/video.cpp:1168 src/ss/ss.cpp:1180 src/ss/ss.cpp:1973
 #: src/ss/ss.cpp:1988 src/gb/gb.cpp:1953
 msgid "None"
 msgstr ""
 
-#: src/drivers/video.cpp:1118
+#: src/drivers/video.cpp:1171
 msgid "Scanlines: Off\n"
 msgstr ""
 
-#: src/drivers/video.cpp:1120
+#: src/drivers/video.cpp:1173
 #, c-format
 msgid "Scanlines: %d%% opacity%s\n"
 msgstr ""
 
-#: src/drivers/video.cpp:1120
+#: src/drivers/video.cpp:1173
 msgid " (with interlace field obscure)"
 msgstr ""
 
-#: src/drivers/video.cpp:1122
+#: src/drivers/video.cpp:1175
 #, c-format
 msgid "Destination Rectangle: X=%d, Y=%d, W=%d, H=%d\n"
 msgstr ""
 
-#: src/drivers/video.cpp:1126
+#: src/drivers/video.cpp:1179
 msgid ""
 "Warning:  Destination rectangle exceeds screen dimensions.  This is ok if "
 "you really do want the clipping...\n"
 msgstr ""
 
-#: src/drivers/video.cpp:1138
+#: src/drivers/video.cpp:1191
 #, c-format
 msgid ""
 "Reverting to soft SDL driver because of error initializing OpenGL blitter: %s"
 msgstr ""
 
-#: src/drivers/video.cpp:1241
+#: src/drivers/video.cpp:1290
 #, c-format
 msgid "SDL_CreateWindow() failed: %s\n"
 msgstr ""
@@ -2158,7 +2219,7 @@ msgstr ""
 msgid "SSF Load Address(=0x%08x) is too high."
 msgstr ""
 
-#: src/state_rewind.cpp:71 src/state_rewind.cpp:247
+#: src/state_rewind.cpp:81 src/state_rewind.cpp:213
 #, c-format
 msgid "State rewinding error: %s"
 msgstr ""
@@ -2252,7 +2313,7 @@ msgid "Steve."
 msgstr ""
 
 #: src/demo/demo.cpp:701 src/nes/nes.cpp:475 src/snes_faust/snes.cpp:829
-#: src/pcfx/pcfx.cpp:1102 src/pce/pce.cpp:1118
+#: src/pcfx/pcfx.cpp:1103 src/pce/pce.cpp:1118
 msgid "Sound quality."
 msgstr ""
 
@@ -2271,7 +2332,7 @@ msgstr ""
 msgid "Sound output rate tolerance."
 msgstr ""
 
-#: src/demo/demo.cpp:702 src/snes_faust/snes.cpp:830 src/pcfx/pcfx.cpp:1103
+#: src/demo/demo.cpp:702 src/snes_faust/snes.cpp:830 src/pcfx/pcfx.cpp:1104
 #: src/pce/pce.cpp:1119
 msgid ""
 "Lower values correspond to better matching of the output rate of the "
@@ -2855,10 +2916,16 @@ msgid ";Edit this file at your own risk!\n"
 msgstr ""
 
 #: src/settings.cpp:456
+msgid ""
+";DO NOT EDIT THIS FILE WHILE AN INSTANCE OF MEDNAFEN THAT USES IT IS "
+"RUNNING.\n"
+msgstr ""
+
+#: src/settings.cpp:457
 msgid ";File format: <key><single space><value><LF or CR+LF>\n"
 msgstr ""
 
-#: src/settings.cpp:861
+#: src/settings.cpp:862
 #, c-format
 msgid "Unknown setting \"%s\""
 msgstr ""
@@ -2878,17 +2945,28 @@ msgstr ""
 msgid "No usable files in ZIP."
 msgstr ""
 
-#: src/file.cpp:145 src/file.cpp:181
+#: src/file.cpp:145
 #, c-format
 msgid "ROM image is too large; maximum size allowed is %llu bytes."
 msgstr ""
 
-#: src/file.cpp:416
+#: src/file.cpp:185
+msgid ""
+"  If you are trying to load a CD image, load it via CUE/CCD/TOC/M3U instead "
+"of BIN/ISO/IMG."
+msgstr ""
+
+#: src/file.cpp:187
+#, c-format
+msgid "ROM image is too large; maximum size allowed is %llu bytes.%s"
+msgstr ""
+
+#: src/file.cpp:423
 #, c-format
 msgid "Error unlinking \"%s\": %s"
 msgstr ""
 
-#: src/file.cpp:438
+#: src/file.cpp:445
 #, c-format
 msgid "Error renaming \"%s\" to \"%s\": %s"
 msgstr ""
@@ -3845,7 +3923,7 @@ msgid ""
 "complexity and a negligible(<0.5ms) increase in latency."
 msgstr ""
 
-#: src/nes/nes.cpp:476 src/pcfx/pcfx.cpp:1103
+#: src/nes/nes.cpp:476 src/pcfx/pcfx.cpp:1104
 msgid "Output rate tolerance."
 msgstr ""
 
@@ -4267,159 +4345,159 @@ msgstr ""
 msgid "Emulated CD-ROM drive speed: %ux\n"
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1058 src/vb/vb.cpp:891
+#: src/pcfx/pcfx.cpp:1059 src/vb/vb.cpp:891
 msgid "Fast Mode"
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1058 src/vb/vb.cpp:891
+#: src/pcfx/pcfx.cpp:1059 src/vb/vb.cpp:891
 msgid ""
 "Fast mode trades timing accuracy, cache emulation, and executing from "
 "hardware registers and RAM not intended for code use for performance."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1059 src/vb/vb.cpp:892
+#: src/pcfx/pcfx.cpp:1060 src/vb/vb.cpp:892
 msgid "Accurate Mode"
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1059 src/vb/vb.cpp:892
+#: src/pcfx/pcfx.cpp:1060 src/vb/vb.cpp:892
 msgid ""
 "Increased timing accuracy, though not perfect, along with cache emulation, "
 "at the cost of decreased performance.  Additionally, even the pipeline isn't "
 "correctly and fully emulated in this mode."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1060
+#: src/pcfx/pcfx.cpp:1061
 msgid "Auto Mode"
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1060
+#: src/pcfx/pcfx.cpp:1061
 msgid ""
 "Selects \"fast\" or \"accurate\" automatically based on an internal "
 "database.  If the CD image is not recognized, defaults to \"fast\"."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1067
+#: src/pcfx/pcfx.cpp:1068
 msgid "This value will cause heavy pixel distortion."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1068
+#: src/pcfx/pcfx.cpp:1069
 msgid "This value will cause moderate pixel distortion."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1069
+#: src/pcfx/pcfx.cpp:1070
 msgid ""
 "This value will cause no pixel distortion as long as interpolation is "
 "enabled on the video output device and the resolution is sufficiently high, "
 "but it will use a lot of CPU time."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1075
+#: src/pcfx/pcfx.cpp:1076
 msgid "Enable multitap on PC-FX port 1."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1075
+#: src/pcfx/pcfx.cpp:1076
 msgid ""
 "EXPERIMENTAL emulation of the unreleased multitap.  Enables ports 3 4 5."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1076
+#: src/pcfx/pcfx.cpp:1077
 msgid "Enable multitap on PC-FX port 2."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1076
+#: src/pcfx/pcfx.cpp:1077
 msgid ""
 "EXPERIMENTAL emulation of the unreleased multitap.  Enables ports 6 7 8."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1079 src/pce_fast/pce.cpp:693
+#: src/pcfx/pcfx.cpp:1080 src/pce_fast/pce.cpp:693
 msgid "Mouse sensitivity."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1080
+#: src/pcfx/pcfx.cpp:1081
 msgid ""
 "When RUN+SEL are pressed simultaneously, disable both buttons temporarily."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1082 src/vb/vb.cpp:924
+#: src/pcfx/pcfx.cpp:1083 src/vb/vb.cpp:924
 msgid "CPU emulation mode."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1083
+#: src/pcfx/pcfx.cpp:1084
 msgid "Path to the ROM BIOS"
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1084
+#: src/pcfx/pcfx.cpp:1085
 msgid "Path to the FX-SCSI ROM"
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1084
+#: src/pcfx/pcfx.cpp:1085
 msgid "Intended for developers only."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1085
+#: src/pcfx/pcfx.cpp:1086
 msgid "Disable internal and external BRAM."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1085
+#: src/pcfx/pcfx.cpp:1086
 msgid ""
 "It is intended for viewing games' error screens that may be different from "
 "simple BRAM full and uninitialized BRAM error screens, though it can cause "
 "the game to crash outright."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1086
+#: src/pcfx/pcfx.cpp:1087
 msgid "Emulated CD-ROM speed."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1086
+#: src/pcfx/pcfx.cpp:1087
 msgid ""
 "Setting the value higher than 2, the default, will decrease loading times in "
 "most games by some degree."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1088 src/pce_fast/pce.cpp:699 src/pce/pce.cpp:1105
+#: src/pcfx/pcfx.cpp:1089 src/pce_fast/pce.cpp:699 src/pce/pce.cpp:1105
 msgid "Remove 16-sprites-per-scanline hardware limit."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1089
+#: src/pcfx/pcfx.cpp:1090
 msgid "Emulated width for 7.16MHz dot-clock mode."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1089
+#: src/pcfx/pcfx.cpp:1090
 msgid ""
 "Lower values are faster, but will cause some degree of pixel distortion."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1091 src/pce_fast/pce.cpp:691 src/pce/pce.cpp:1088
+#: src/pcfx/pcfx.cpp:1092 src/pce_fast/pce.cpp:691 src/pce/pce.cpp:1088
 msgid "First rendered scanline."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1092 src/pce_fast/pce.cpp:692 src/pce/pce.cpp:1089
+#: src/pcfx/pcfx.cpp:1093 src/pce_fast/pce.cpp:692 src/pce/pce.cpp:1089
 msgid "Last rendered scanline."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1094
+#: src/pcfx/pcfx.cpp:1095
 msgid ""
 "Enable bilinear interpolation on the chroma channel of RAINBOW YUV output."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1094
+#: src/pcfx/pcfx.cpp:1095
 msgid ""
 "This is an enhancement-related setting.  Enabling it may cause graphical "
 "glitches with some games."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1096
+#: src/pcfx/pcfx.cpp:1097
 msgid "Hack to suppress clicks caused by forced channel resets."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1100
+#: src/pcfx/pcfx.cpp:1101
 msgid ""
 "Hack that emulates the codec a buggy ADPCM encoder used for some games' "
 "ADPCM."
 msgstr ""
 
-#: src/pcfx/pcfx.cpp:1102
+#: src/pcfx/pcfx.cpp:1103
 msgid ""
 "Higher values correspond to better SNR and better preservation of higher "
 "frequencies(\"brightness\"), at the cost of increased computational "
@@ -5703,11 +5781,6 @@ msgstr ""
 #, c-format
 msgid ""
 "Custom palette file's size(%llu bytes) is incorrect.  Valid sizes are: %s"
-msgstr ""
-
-#: src/mednafen.cpp:726 src/mednafen.cpp:735 src/cdrom/CDAccess_Image.cpp:362
-#, c-format
-msgid "Error: %s\n"
 msgstr ""
 
 #: src/mednafen.cpp:815

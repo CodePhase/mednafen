@@ -6,8 +6,8 @@ AC_CONFIG_MACRO_DIR([m4])
 #
 # Avoid trailing and leading zeroes in the decimal version components to avoid confusing not-so-learned people.
 #
-MEDNAFEN_VERSION='1.21.0-UNSTABLE'
-MEDNAFEN_VERSION_NUMERIC=0x00102100
+MEDNAFEN_VERSION='1.21.1'
+MEDNAFEN_VERSION_NUMERIC=0x00102101
 #                        0xJJJnnnRR
 
 AC_CANONICAL_HOST
@@ -561,6 +561,25 @@ AC_CONFIG_LINKS([include/trio/trio.h:$trio_include_symsrc/trio.h])
 AC_CONFIG_LINKS([include/trio/trionan.h:$trio_include_symsrc/trionan.h])
 AC_CONFIG_LINKS([include/trio/triop.h:$trio_include_symsrc/triop.h])
 AC_CONFIG_LINKS([include/trio/triostr.h:$trio_include_symsrc/triostr.h])
+
+#
+# minilzo/lzo
+#
+AM_CONDITIONAL(HAVE_EXTERNAL_LZO2, false)
+AC_ARG_WITH([external-lzo], [AS_HELP_STRING([--with-external-lzo], [compile and link with external LZO @<:@default=no@:>@])],
+	[],
+	[with_external_lzo=no])
+if test x$with_external_lzo = xyes; then
+	PKG_CHECK_MODULES(LZO2, lzo2 >= 2.0.9, [], AC_MSG_ERROR([*** lzo2 >= 2.0.9 not found!]))
+	AC_SUBST([LZO2_LIBS])
+	AC_SUBST([LZO2_CFLAGS])
+	AC_DEFINE([HAVE_EXTERNAL_LZO2], [1], [Define if we are compiling and linking with external LZO.])
+	AM_CONDITIONAL(HAVE_EXTERNAL_LZO2, true)
+	minilzo_include_symsrc="include/minilzo_external"
+else
+	minilzo_include_symsrc="include/minilzo_internal"
+fi
+AC_CONFIG_LINKS([include/minilzo/minilzo.h:$minilzo_include_symsrc/minilzo.h])
 
 #
 # libsndfile

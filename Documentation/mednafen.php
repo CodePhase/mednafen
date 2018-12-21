@@ -516,7 +516,7 @@ the optional "g" flag with "-+" polarity(e.g. "abs_0-+g").
  <?php BeginSection("Troubleshooting and Common Solutions", "Section_troubleshooting"); ?>
   <p>
    When Mednafen encounters a fatal error, it will print details of the error to stdout and/or stderr before exiting.  On the Microsoft Windows builds of Mednafen,
-   stdout and stderr are redirected to files "<b>stdout.txt</b>" and "<b>stderr.txt</b>", respectively.
+   when Mednafen is not being run from a console, stdout and stderr are redirected to files "<b>stdout.txt</b>" and "<b>stderr.txt</b>", respectively.
   </p>
   <?php BeginSection("No sound output on Linux.", "Section_troubleshooting_nosoundlinux"); ?>
    <p>

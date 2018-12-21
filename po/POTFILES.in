@@ -55,7 +55,7 @@ src/hw_cpu/z80-fuse/opcodes_base.c
 src/hw_cpu/z80-fuse/z80_cb.c
 src/hw_cpu/z80-fuse/z80_ddfdcb.c
 src/hw_cpu/z80-fuse/z80_ddfd.c
-src/compress/minilzo.c
+src/minilzo/minilzo.c
 src/memory.cpp
 src/Time.cpp
 src/md/memvdp.cpp
@@ -809,7 +809,6 @@ src/drivers/help.h
 src/drivers/nnx.h
 src/drivers/prompt.h
 src/drivers/2xSaI.h
-src/drivers/icon192x192.h
 src/drivers/cheat.h
 src/net/Net.h
 src/net/Net_POSIX.h
@@ -1135,11 +1134,9 @@ src/pce_fast/pcecd_drive.h
 src/pce_fast/huc6280.h
 src/pce_fast/hes.h
 src/pce_fast/vdc.h
-src/compress/minilzo.h
+src/minilzo/_minilzo.h
 src/compress/GZFileStream.h
 src/compress/ZLInflateFilter.h
-src/compress/lzodefs.h
-src/compress/lzoconf.h
 src/compress/ZIPReader.h
 src/hw_video/huc6270/vdc.h
 src/FileStream.h
