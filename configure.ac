@@ -6,8 +6,9 @@ AC_CONFIG_MACRO_DIR([m4])
 #
 # Avoid trailing and leading zeroes in the decimal version components to avoid confusing not-so-learned people.
 #
-MEDNAFEN_VERSION='0.9.48'
-MEDNAFEN_VERSION_NUMERIC=0x00094800
+MEDNAFEN_VERSION='1.21.0-UNSTABLE'
+MEDNAFEN_VERSION_NUMERIC=0x00102100
+#                        0xJJJnnnRR
 
 AC_CANONICAL_HOST
 AM_INIT_AUTOMAKE([mednafen], $MEDNAFEN_VERSION)
@@ -115,6 +116,8 @@ dnl break some code(with compile-time failures or run-time assert()s triggering)
 dnl
 dnl Use -fwrapv instead of -fno-strict-overflow; -fno-strict-overflow is buggy on gcc and does not work as documented/implied.
 dnl
+dnl -mfunction-return=keep, -mindirect-branch=keep, -mno-indirect-branch-register to disable performance-murdering Spectre mitigations.
+dnl
 CODEGEN_FLAGS=""
 AX_CFLAGS_GCC_OPTION([-fno-pic], CODEGEN_FLAGS)
 AX_CFLAGS_GCC_OPTION([-fno-pie], CODEGEN_FLAGS)
@@ -124,6 +127,10 @@ AX_CFLAGS_GCC_OPTION([-nopie], CODEGEN_FLAGS)
 AX_CFLAGS_GCC_OPTION([-no-pie], CODEGEN_FLAGS)
 AX_CFLAGS_GCC_OPTION([-fwrapv],  CODEGEN_FLAGS)
 AX_CFLAGS_GCC_OPTION([-fjump-tables], CODEGEN_FLAGS)
+AX_CFLAGS_GCC_OPTION([-mfunction-return=keep], CODEGEN_FLAGS)
+AX_CFLAGS_GCC_OPTION([-mindirect-branch=keep], CODEGEN_FLAGS)
+AX_CFLAGS_GCC_OPTION([-mno-indirect-branch-register], CODEGEN_FLAGS)
+AX_CFLAGS_GCC_OPTION([-mno-retpoline], CODEGEN_FLAGS)
 
 CODEGEN_CFLAGS=""
 
@@ -609,7 +616,7 @@ if expr x"$host" : 'x.*-mingw*' > /dev/null; then
 	AC_DEFINE([WIN32], [1], [Define if we are compiling for Win32.])
 	AM_CONDITIONAL(WIN32, true)
 
-	LIBS="-mwindows -lws2_32 -ldxguid -lwinmm -ldinput $LIBS -lwinmm"
+	LIBS="-mconsole -lws2_32 -ldxguid -lwinmm -ldinput $LIBS -lwinmm"
 	CPPFLAGS="-D_LFS64_LARGEFILE=1 $CPPFLAGS"
 elif expr x"$host" : 'x.*djgpp' > /dev/null; then
        	AC_DEFINE([PSS_STYLE],[2], [Defines the filesystem path-separator type.])
@@ -625,8 +632,8 @@ fi
 
 if $NEED_SDL
 then
-	SDL_VERSION=1.2.0
-	AM_PATH_SDL($SDL_VERSION, HAVE_SDL=true, HAVE_SDL=false)
+	SDL_VERSION=2.0.5
+	AM_PATH_SDL2($SDL_VERSION, HAVE_SDL=true, HAVE_SDL=false)
 	if $HAVE_SDL
 	then
 		AM_CONDITIONAL(HAVE_SDL, true)
@@ -634,7 +641,7 @@ then
 		AC_SUBST(SDL_LIBS)
 		AC_SUBST(SDL_CFLAGS)
 	else
-		AC_MSG_ERROR([*** SDL 1.2.x not found!])
+		AC_MSG_ERROR([*** SDL >= 2.0.5 not found!])
 	fi
 fi
 
