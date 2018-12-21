@@ -1313,8 +1313,8 @@ zebraz
 Zebra-Z 3
 Zebras wearing sunglasses.
 snorkle
-Snorkle 4? ? ?
-
+Snorkle 4
+? ? ?
 demo.input.port1.controller.toggle_ilace
 MDFNSF_CAT_INPUT_MAPPING MDFNSF_SUPPRESS_DOC 
 demo, Port 1, Controller: Toggle Interlace Mode
@@ -1382,8 +1382,8 @@ zebraz
 Zebra-Z 3
 Zebras wearing sunglasses.
 snorkle
-Snorkle 4? ? ?
-
+Snorkle 4
+? ? ?
 demo.input.port2.controller.toggle_ilace
 MDFNSF_CAT_INPUT_MAPPING MDFNSF_SUPPRESS_DOC 
 demo, Port 2, Controller: Toggle Interlace Mode
@@ -32421,7 +32421,7 @@ MDFNST_ENUM
 auto
 
 
-6
+7
 auto
 Automatic
 
@@ -32440,12 +32440,24 @@ extram4
 cs1ram16
 16MiB RAM mapped in A-bus CS1
 
+ar4mp
+
+
 ss.cart.kof95_path
 MDFNSF_EMU_STATE 
 Path to KoF 95 ROM image.
 
 MDFNST_STRING
 mpr-18811-mx.ic1
+
+
+0
+ss.cart.satar4mp_path
+MDFNSF_EMU_STATE MDFNSF_SUPPRESS_DOC MDFNSF_NONPERSISTENT 
+Path to Action Replay 4M Plus firmware image.
+
+MDFNST_STRING
+satar4mp.bin
 
 
 0

@@ -4,12 +4,16 @@
 
 <?php BeginSection('Introduction', "Section_intro"); ?>
 <p>
-<font color="orange" size="+1"><b>NOTE:</b></font> The Sega Saturn emulation is currently experimental, and under active development, and save states are not currently supported.  By default(and for the official releases for Windows), Saturn emulation is only compiled in for builds for some 64-bit architectures(x86_64, AArch64, PPC64).  The separate <a href="ssfplay.html">SSF playback module</a> does not have this limitation.
+<font color="orange" size="+1"><b>NOTE:</b></font> The Sega Saturn emulation is currently experimental and under active development.  By default(and for the official releases for Windows), Saturn emulation is only compiled in for builds for some 64-bit architectures(x86_64, AArch64, PPC64).  The separate <a href="ssfplay.html">SSF playback module</a> does not have this limitation.
 </p>
 <p>
 Mednafen's Sega Saturn emulation is extremely CPU intensive.  The minimum recommended CPU is a quad-core Intel Haswell-microarchitecture CPU with
 a base frequency of >= 3.3GHz and a turbo frequency of >= 3.7GHz(e.g. Xeon E3-1226 v3), but note that this recommendation does not apply to any unofficial ports or forks,
 which may have higher CPU requirements.
+</p>
+
+<p>
+Save states are supported, but the data is not fully sanitized properly on save state load, so definitely <font color="red">avoid loading save states acquired from sources you don't trust</font>(this includes via netplay).
 </p>
 
 <p>

@@ -6,8 +6,8 @@ AC_CONFIG_MACRO_DIR([m4])
 #
 # Avoid trailing and leading zeroes in the decimal version components to avoid confusing not-so-learned people.
 #
-MEDNAFEN_VERSION='0.9.46'
-MEDNAFEN_VERSION_NUMERIC=0x00094600
+MEDNAFEN_VERSION='0.9.47'
+MEDNAFEN_VERSION_NUMERIC=0x00094700
 
 AC_CANONICAL_HOST
 AM_INIT_AUTOMAKE([mednafen], $MEDNAFEN_VERSION)
@@ -705,4 +705,4 @@ AC_SUBST([AM_CFLAGS], "$ALTIVEC_FLAGS $OPTIMIZER_FLAGS $WARNING_FLAGS $CODEGEN_F
 AC_SUBST([AM_CXXFLAGS], "$ALTIVEC_FLAGS $OPTIMIZER_FLAGS $WARNING_FLAGS $CODEGEN_FLAGS $CODEGEN_CXXFLAGS")
 
 dnl Output Makefiles
-AC_OUTPUT([Makefile src/Makefile src/drivers/Makefile src/drivers_dos/Makefile src/sexyal/Makefile src/tremor/Makefile src/mpcdec/Makefile src/trio/Makefile src/ngp/Makefile src/snes/Makefile src/ss/Makefile src/desa68/Makefile src/quicklz/Makefile po/Makefile.in  intl/Makefile])
+AC_OUTPUT([Makefile src/Makefile src/drivers/Makefile src/drivers_dos/Makefile src/sexyal/Makefile src/tremor/Makefile src/mpcdec/Makefile src/trio/Makefile src/ss/Makefile src/desa68/Makefile src/quicklz/Makefile po/Makefile.in intl/Makefile])

@@ -4328,8 +4328,8 @@ $as_echo "$ac_cv_safe_to_define___extensions__" >&6; }
 #
 # Avoid trailing and leading zeroes in the decimal version components to avoid confusing not-so-learned people.
 #
-MEDNAFEN_VERSION='0.9.46'
-MEDNAFEN_VERSION_NUMERIC=0x00094600
+MEDNAFEN_VERSION='0.9.47'
+MEDNAFEN_VERSION_NUMERIC=0x00094700
 
 # Make sure we can run config.sub.
 $SHELL "$ac_aux_dir/config.sub" sun4 >/dev/null 2>&1 ||
@@ -18377,7 +18377,7 @@ AM_CFLAGS="$ALTIVEC_FLAGS $OPTIMIZER_FLAGS $WARNING_FLAGS $CODEGEN_FLAGS $CODEGE
 AM_CXXFLAGS="$ALTIVEC_FLAGS $OPTIMIZER_FLAGS $WARNING_FLAGS $CODEGEN_FLAGS $CODEGEN_CXXFLAGS"
 
 
-ac_config_files="$ac_config_files Makefile src/Makefile src/drivers/Makefile src/drivers_dos/Makefile src/sexyal/Makefile src/tremor/Makefile src/mpcdec/Makefile src/trio/Makefile src/ngp/Makefile src/snes/Makefile src/ss/Makefile src/desa68/Makefile src/quicklz/Makefile po/Makefile.in intl/Makefile"
+ac_config_files="$ac_config_files Makefile src/Makefile src/drivers/Makefile src/drivers_dos/Makefile src/sexyal/Makefile src/tremor/Makefile src/mpcdec/Makefile src/trio/Makefile src/ss/Makefile src/desa68/Makefile src/quicklz/Makefile po/Makefile.in intl/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -19571,8 +19571,6 @@ do
     "src/tremor/Makefile") CONFIG_FILES="$CONFIG_FILES src/tremor/Makefile" ;;
     "src/mpcdec/Makefile") CONFIG_FILES="$CONFIG_FILES src/mpcdec/Makefile" ;;
     "src/trio/Makefile") CONFIG_FILES="$CONFIG_FILES src/trio/Makefile" ;;
-    "src/ngp/Makefile") CONFIG_FILES="$CONFIG_FILES src/ngp/Makefile" ;;
-    "src/snes/Makefile") CONFIG_FILES="$CONFIG_FILES src/snes/Makefile" ;;
     "src/ss/Makefile") CONFIG_FILES="$CONFIG_FILES src/ss/Makefile" ;;
     "src/desa68/Makefile") CONFIG_FILES="$CONFIG_FILES src/desa68/Makefile" ;;
     "src/quicklz/Makefile") CONFIG_FILES="$CONFIG_FILES src/quicklz/Makefile" ;;
