@@ -6,8 +6,8 @@ AC_CONFIG_MACRO_DIR([m4])
 #
 # Avoid trailing and leading zeroes in the decimal version components to avoid confusing not-so-learned people.
 #
-MEDNAFEN_VERSION='0.9.45.1'
-MEDNAFEN_VERSION_NUMERIC=0x00094501
+MEDNAFEN_VERSION='0.9.46'
+MEDNAFEN_VERSION_NUMERIC=0x00094600
 
 AC_CANONICAL_HOST
 AM_INIT_AUTOMAKE([mednafen], $MEDNAFEN_VERSION)
@@ -98,6 +98,8 @@ dnl in Mednafen that would cause problems.
 dnl
 dnl -fomit-frame-pointer is required for some x86 inline assembly to compile.
 dnl
+dnl -fstrict-aliasing for OpenBSD
+dnl
 OPTIMIZER_FLAGS=""
 AX_CFLAGS_GCC_OPTION([-fno-fast-math], OPTIMIZER_FLAGS)
 AX_CFLAGS_GCC_OPTION([-fno-unsafe-math-optimizations], OPTIMIZER_FLAGS)
@@ -105,6 +107,7 @@ AX_CFLAGS_GCC_OPTION([-fno-aggressive-loop-optimizations], OPTIMIZER_FLAGS)
 AX_CFLAGS_GCC_OPTION([-fno-ipa-icf], OPTIMIZER_FLAGS)
 AX_CFLAGS_GCC_OPTION([-fno-printf-return-value], OPTIMIZER_FLAGS)
 AX_CFLAGS_GCC_OPTION([-fomit-frame-pointer], OPTIMIZER_FLAGS)
+AX_CFLAGS_GCC_OPTION([-fstrict-aliasing], OPTIMIZER_FLAGS)
 
 dnl
 dnl Aggressively try to disable PIC and PIE, as it has a significant performance overhead and will
@@ -146,6 +149,11 @@ AX_CFLAGS_GCC_OPTION([-fno-stack-protector], NO_STACK_PROTECTOR_FLAGS)
 AX_CFLAGS_GCC_OPTION([-fno-stack-protector-all], NO_STACK_PROTECTOR_FLAGS)
 AX_CFLAGS_GCC_OPTION([-fno-stack-protector-strong], NO_STACK_PROTECTOR_FLAGS)
 AC_SUBST(NO_STACK_PROTECTOR_FLAGS)
+
+# Used for ngp and quicklz
+NO_STRICT_ALIASING_FLAGS=""
+AX_CFLAGS_GCC_OPTION([-fno-strict-aliasing], NO_STRICT_ALIASING_FLAGS)
+AC_SUBST(NO_STRICT_ALIASING_FLAGS)
 
 # -----------------------------------
 # Begin snes flags

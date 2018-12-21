@@ -16,6 +16,11 @@ which may have higher CPU requirements.
 Enabling CD image preloading into memory via the <a href="mednafen.html#cd.image_memcache">cd.image_memcache</a> setting is recommended, to
 avoid short emulator pauses and audio pops due to waiting for disk accesses to complete when the emulated CD is accessed.
 </p>
+
+<p>
+A list of known emulation bugs(with workarounds in some cases) in Saturn games with Mednafen is available at <a href="https://forum.fobby.net/index.php?t=msg&th=1357">https://forum.fobby.net/index.php?t=msg&th=1357</a>
+</p>
+
 <?php EndSection(); ?>
 
 <?php BeginSection("Firmware/BIOS", "Section_firmware_bios"); ?>
